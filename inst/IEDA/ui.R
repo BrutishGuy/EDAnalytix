@@ -11,7 +11,7 @@ library(shinycssloaders)
 ui = dashboardPage(title = "InteractiveEDA",
   skin = "blue",
   dashboardHeader(title = div(img(src="Title.png",height=50,width=150,align = "left"),
-                              "IEDA"),
+                              "EDAnalytics"),
                   titleWidth = 250),
 
   # ***************************Dashboard Side Bar***************************

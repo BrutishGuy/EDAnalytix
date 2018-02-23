@@ -8,16 +8,11 @@ fluidPage(
          HTML("<div style='height: 25px;'>"),
          HTML("</div>"),
          h3("About"),
-         h4("Exploratory Data Analysis is one of the key components of a data science project.
-            It is a crucial step to take before diving in to the machine learning or data modeling.
-            EDA can sometimes be time consuming due to reasons like huge number of variables in the data set,
-            writing code for each plot or group of plots.
-            In order to eliminate these difficulties and reduce the time here is a simple tool which provides
-            different interactive visualizations used in EDA just on click of a button."),
+         h4("This is a tool to assist with data analytics and visualizations."),
          HTML("<div style='height: 5px;'>"),
          HTML("</div>"),
          h3("Manual"),
-         h4("IEDA is a simple application and is easy to use. Follow the below series of simple steps
+         h4("Follow the below series of simple steps
             to utilise the tool."),
          tags$ol(
            tags$li(h4("Upload the dataset file in the selected format in the \"DataSource\" tab
@@ -45,11 +40,11 @@ fluidPage(
          HTML("<div style='height: 5px;'>"),
          HTML("</div>"),
          h3("Contact"),
-         h4("sskrupan@gmail.com"),
+         h4("victor.gueorg@gmail.com"),
          HTML("<div style='height: 5px;'>"),
          HTML("</div>"),
          align = "center",
-         HTML(paste(icon("copyright"),"Krupan - IEDA Version 1.0")),
+         HTML(paste(icon("copyright"),"EDAnalytix")),
          HTML("<div style='height: 25px;'>"),
          HTML("</div>")
          )
