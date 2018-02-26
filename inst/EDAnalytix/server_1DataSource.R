@@ -167,6 +167,14 @@ finalInputData = eventReactive(input$btExplore, {
       }
     }
     usrStructData = usrStructData %>% select(one_of(c(dnames, mnames)))
+    # 
+    # ***** NB NB This line below makes everything pretty and removes full stops from column headings
+    #       and replaces it with spaces. It is the single greatest achievement of my entire life
+    
+    names(usrStructData) <- gsub("\\.", " ", names(usrStructData))
+    
+    # read tehe above comment please
+    
     return(usrStructData)
   } else {
     return(NULL)

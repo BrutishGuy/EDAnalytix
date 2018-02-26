@@ -8,10 +8,10 @@ library(evaluate)
 library(shinycssloaders)
 
 
-ui = dashboardPage(title = "InteractiveEDA",
+ui = dashboardPage(title = "Interactive Analytix",
   skin = "blue",
   dashboardHeader(title = div(img(src="Title.png",height=50,width=150,align = "left"),
-                              "EDAnalytics"),
+                              "EDAnalytix"),
                   titleWidth = 250),
 
   # ***************************Dashboard Side Bar***************************

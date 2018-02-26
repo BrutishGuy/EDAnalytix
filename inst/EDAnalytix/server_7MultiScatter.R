@@ -1,13 +1,6 @@
 # ************************************Multi Variate Scatter Plot************************************
 library(shiny)
 library(shinydashboard)
-
-# **************************Preamble*******************************
-p_abline <- function(x, a=2, b=-5){
-  y <- a * x + b
-  return(y)
-}
-
 # **************************Select Inputs**************************
 output$MultiMeasure1 = renderUI({
   selectInput("MultiMeasure1", "Select Measure1",
@@ -45,12 +38,7 @@ output$MultiScatterPlot = renderPlotly(
   if(is.null(dataInput6())) {
     return()
   } else {
-    peanut <- length(dataInput6()$XVar)
-    p <- plot_ly(data = dataInput6(), x = ~ XVar, y = ~ YVar, color = ~ CVar, colors = "Paired", marker = list(size = 5)) 
-    p <- add_trace(p, x = 1:peanut, y = rnorm(peanut), mode = "lines")
-    #p <- add_trace(p, x=c(10,20), y=c(p_abline(10), p_abline(20)) , type="scatter", mode="lines", name='abline')  
-    p %>%
+    plot_ly(data = dataInput6(), x = ~ XVar, y = ~ YVar, color = ~ CVar, colors = "Paired", marker = list(size = 5)) %>%
       layout(title = paste0("Scatter Plot: ", input$MultiMeasure1, " vs ", input$Measure2, " across ", input$MultiDimension),
              xaxis = list(title = paste0(input$MultiMeasure1)), yaxis = list(title = paste0(input$MultiMeasure2)), showlegend = TRUE)
-    p
   })
