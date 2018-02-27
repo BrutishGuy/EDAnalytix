@@ -36,7 +36,7 @@ fluidPage(
          HTML("<div style='height: 5px;'>"),
          HTML("</div>"),
          h4("Source code for the Shiny applicaton and License Information can be found at:"),
-         h4(a("https://github.com/krupanss/Interactive-Exploratory-Data-Analysis", href="https://github.com/krupanss/Interactive-Exploratory-Data-Analysis")),
+         h4(a("https://github.com/BrutishGuy/EDAnalytix", href="https://github.com/BrutishGuy/EDAnalytix")),
          HTML("<div style='height: 5px;'>"),
          HTML("</div>"),
          h3("Contact"),

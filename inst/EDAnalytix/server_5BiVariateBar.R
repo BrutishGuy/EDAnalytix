@@ -35,6 +35,7 @@ output$GBarPlot = renderPlotly(
   } else {
     dataInput4() %>% count(XVar, YVar) %>%
       plot_ly(x = ~ XVar, y = ~ n, color = ~ YVar, type = "bar") %>%
-      layout(title = paste0("Distribution of ", input$GBarDimension1, " across ", input$GBarDimension2),
+      layout(margin = list(l = 50, r = 50, b = 150, t = 50, pad = 10),
+             title = paste0("Distribution of ", input$GBarDimension1, " across ", input$GBarDimension2),
              xaxis = list(title = input$GBarDimension1), yaxis = list(title = "No of records"), legend = FALSE)
   })

@@ -9,8 +9,8 @@ library(shinycssloaders)
 
 
 ui = dashboardPage(title = "Interactive Analytix",
-  skin = "blue",
-  dashboardHeader(title = div(img(src="Title.png",height=50,width=150,align = "left"),
+  skin = "black",
+  dashboardHeader(title = div(img(src="Title.png",height=50,width=235,align = "left"),
                               "EDAnalytix"),
                   titleWidth = 250),
 
@@ -27,6 +27,9 @@ ui = dashboardPage(title = "Interactive Analytix",
       menuItem("Bi Variate Group Histogram", tabName = "GHistPlot", icon = icon("area-chart")),
       menuItem("Multi Variate Scatter Plot", tabName = "MultiScatterPlot", icon = icon("dot-circle-o")),
       menuItem("Multi Variate Box Plot", tabName = "MultiBoxPlot", icon = icon("sliders")),
+      menuItem("Product Pricing Analysis", tabName = "ProductSalesDist", icon = icon("sliders")),
+      menuItem("Product Pricing Bar Plots", tabName = "ProductSalesBar", icon = icon("sliders")),
+      menuItem("Price Category Analysis", tabName = "CompoundCodeFractions", icon = icon("bar-chart")),
       menuItem("EDA", tabName = "EDA", icon = icon("info-circle"))
     )
   ),
@@ -69,6 +72,18 @@ ui = dashboardPage(title = "Interactive Analytix",
       # ***************************Multi Variate Box Plot***************************
       tabItem(tabName = "MultiBoxPlot",
               source("./ui_8MultiBox.R", local = T)[1]),
+      
+      # ***************************Product Sales Distribution***************************
+      tabItem(tabName = "ProductSalesDist",
+              source("./ui_10ProductSalesDist.R", local = T)[1]),
+      
+      # ***************************Product Sales Bar Graphs***************************
+      tabItem(tabName = "ProductSalesBar",
+              source("./ui_12ProductSalesBar.R", local = T)[1]),
+      
+      # ***************************Compound Code Fractions***************************
+      tabItem(tabName = "CompoundCodeFractions",
+              source("./ui_11CompoundCodeFractions.R", local = T)[1]),
 
       # ***************************Multi Variate Box Plot***************************
       tabItem(tabName = "EDA",

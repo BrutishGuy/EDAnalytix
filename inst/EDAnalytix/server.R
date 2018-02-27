@@ -27,4 +27,10 @@ shinyServer(function(input, output, session) {
   source("./server_7MultiScatter.R", local = T)
 
   source("./server_8MultiBox.R", local = T)
+  
+  source("./server_10ProductSalesDist.R", local = T)
+  
+  source("./server_12ProductSalesBar.R", local = T)
+  
+  source("./server_11CompoundCodeFractions.R", local = T)
 })

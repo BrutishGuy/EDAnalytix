@@ -181,6 +181,12 @@ finalInputData = eventReactive(input$btExplore, {
   }
 })
 
+df <- data.frame(Student = c("a","a","a","a","a","b","b","b","b","b","c","c","c","c"),
+                 year = c(seq(2001,2005,1),seq(2003,2007,1),seq(2002,2005,1)),
+                 col1 = runif(14,min = 50,max = 100),
+                 col2 = runif(14,min = 120,max = 200),
+                 col3 = runif(14,min = 60,max = 200),stringsAsFactors=F)
+
 ValTabs = reactiveValues(Tabs = TRUE, Plots = FALSE)
 
 observeEvent(input$fileType,{
