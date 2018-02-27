@@ -1,8 +1,6 @@
-# EDAnalytix (Exploratory Data Analytics (Analytix))
-EDAnalytix is an R Package for a R Shiny application for exploratory data analysis through interactive Plotly visualizations and plots
-
-# About
-This is a simple tool which provides different interactive visualizations used in data analytics and visualization tasks.
+# Exploratory Data Analytix (ED Analytix)
+ED Analytix is an R Package built as an R Shiny application for exploratory data analysis through interactive Plotly visualizations and plots. It is a tool that
+provides different interactive visualizations used in data analytics and visualization tasks.
 
 ## Install package and run the Shiny application using the below commands.
 `devtools::install_github("BrutishGuy/EDAnalytix")`
@@ -13,9 +11,10 @@ This is a simple tool which provides different interactive visualizations used i
 
 
 # Manual
-EDAnalytix is a simple application and is easy to use. Follow the below series of simple steps to utilise the tool.
+To use the application, follow the series of instructions below
 
-1. Upload the dataset file in the selected format in the "DataSource" tab and click on submit.
+0. You will appear in the home menu, where these instructions are located. Click on the _Upload Dataset_ tab.
+1. Here, you can upload the dataset file you wish to use: To do this, select the correct file format (options are .xlsx, .rdata, .csv), browse for the file via a Windows pop-up, select whether the file has a header row or not, and for CSV files select the delimiter option that appears. Then click on _Submit Data_.
 2. On submit, you can do pre-processing of Data in the "Data Processing" Pane on the right side.
 3. In the "Data Strucure" tab, you can view the strucure of data.
 4. In the "Data Preview" tab, you can view the actual data.
