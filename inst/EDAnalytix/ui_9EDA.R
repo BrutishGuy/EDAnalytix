@@ -64,12 +64,6 @@ fixedRow(
          h4(a("https://insidebigdata.com/2014/11/09/ask-data-scientist-importance-exploratory-data-analysis/",
               href="https://insidebigdata.com/2014/11/09/ask-data-scientist-importance-exploratory-data-analysis/")),
          h4(a("http://www.itl.nist.gov/div898/handbook/eda/section1/eda11.htm",
-              href="http://www.itl.nist.gov/div898/handbook/eda/section1/eda11.htm")),
-         HTML("<div style='height: 5px;'>"),
-         HTML("</div>"),
-         align = "center",
-         HTML(paste(icon("copyright"),"Krupan - IEDA Version 1.0")),
-         HTML("<div style='height: 25px;'>"),
-         HTML("</div>")
+              href="http://www.itl.nist.gov/div898/handbook/eda/section1/eda11.htm"))
          )
          ))
